@@ -15,21 +15,21 @@ A Lab or Workshop accompanies this application:
 Using the Maven Wrapper,
 
 ```console
-$ ./mvnw clean install
-$ ./mvnw spring-boot:run
+user@host:~$ ./mvnw clean install
+user@host:~$ ./mvnw spring-boot:run
 ```
 
 Without Maven Wrapper,
 
 ```console
-$ mvn clean install
-$ mvn spring-boot:run
+user@host:~$ mvn clean install
+user@host:~$ mvn spring-boot:run
 ```
 
 ## Test
 
 ```console
-$ curl -X GET 'http://localhost:8080/api/hello?name=pluto'
+user@host:~$ curl -X GET 'http://localhost:8080/api/hello?name=pluto'
 ```
 
 ## Maven
@@ -37,7 +37,7 @@ $ curl -X GET 'http://localhost:8080/api/hello?name=pluto'
 To download all dependencies for development, run 
 
 ```console
-$ mvn dependency:copy-dependencies
+user@host:~$ mvn dependency:copy-dependencies
 ```
 
 ## Deployment
@@ -45,7 +45,6 @@ $ mvn dependency:copy-dependencies
 The `Jenkinsfile` is written for a Source-to-Image (S2I) deployment to OpenShift 3.11.
 
 Lab coming soon...
-
 
 ## Docs
 
