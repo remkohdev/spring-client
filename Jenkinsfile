@@ -10,7 +10,7 @@ pipeline {
 		  usernameVariable: 'USERNAME',
 		  passwordVariable: 'PASSWORD',
 		)]) {
-	        sh "oc login https://c100-e.us-south.containers.cloud.ibm.com:30403 --token=${PASSWORD}"
+	        sh "oc login https://c100-e.us-east.containers.cloud.ibm.com:31305 --token=${PASSWORD}"
 		}
       }
     }
